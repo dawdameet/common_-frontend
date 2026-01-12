@@ -13,10 +13,10 @@ export function Hero() {
 
       {/* Structural Lines */}
       <div className="absolute top-0 right-1/3 w-px h-full bg-zinc-800 hidden md:block" />
-      <div className="absolute top-24 w-full h-px bg-zinc-800" />
+      <div className="absolute top-32 w-full h-px bg-zinc-800" />
 
       {/* Navigation */}
-      <nav className="relative z-10 w-full h-24 flex items-center justify-between px-8 md:px-12">
+      <nav className="relative z-10 w-full h-32 flex items-center justify-between px-8 md:px-12">
         <div className="text-zinc-100 text-xl font-bold tracking-widest uppercase">Common_</div>
         <div className="hidden md:flex items-center gap-8">
            <a href="#" className="text-zinc-500 hover:text-zinc-300 text-xs uppercase tracking-widest transition-colors">Manifesto</a>
@@ -27,8 +27,8 @@ export function Hero() {
 
       {/* Main Content Area */}
       <div className="flex-1 relative z-10 grid grid-cols-1 md:grid-cols-3">
-        {/* Main Content Column - Sits Low */}
-        <div className="md:col-span-2 relative flex flex-col justify-end pb-20 md:pb-32 p-8 md:p-12">
+        {/* Main Content Column */}
+        <div className="md:col-span-2 relative flex flex-col justify-end pb-32 p-8 md:p-12">
            
            <motion.div 
              initial={{ opacity: 0, y: 10 }}
@@ -59,8 +59,8 @@ export function Hero() {
         {/* Right Abstract Column */}
         <div className="relative flex flex-col justify-center items-center border-l border-zinc-800/50 md:border-transparent overflow-hidden">
            
-           {/* Abstract Colorful Art */}
-           <div className="relative w-full h-full flex items-center justify-center">
+           {/* Abstract Colorful Art - Shifted Down */}
+           <div className="relative w-full h-full flex items-center justify-center pt-32">
               {/* Glowing Gradient Orb Background */}
               <motion.div 
                 animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
