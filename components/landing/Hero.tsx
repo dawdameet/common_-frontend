@@ -7,16 +7,12 @@ import { cn } from "@/lib/utils";
 
 export function Hero() {
   return (
-    <div className="relative h-screen w-full bg-zinc-950 flex flex-col overflow-hidden border-b border-zinc-800">
+    <div className="relative h-screen w-full bg-zinc-950 flex flex-col overflow-hidden">
       {/* Grid Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
-      {/* Structural Lines */}
-      <div className="absolute top-0 right-1/3 w-px h-full bg-zinc-800 hidden md:block" />
-      <div className="absolute top-32 w-full h-px bg-zinc-800" />
-
-      {/* Navigation */}
-      <nav className="relative z-10 w-full h-32 flex items-center justify-between px-8 md:px-12">
+      {/* Navigation - Now holds the horizontal structural line via border-b */}
+      <nav className="relative z-10 w-full h-32 flex items-center justify-between px-8 md:px-12 border-b border-zinc-800 bg-zinc-950/50 backdrop-blur-sm">
         <div className="text-zinc-100 text-xl font-bold tracking-widest uppercase">Common_</div>
         <div className="hidden md:flex items-center gap-8">
            <a href="#" className="text-zinc-500 hover:text-zinc-300 text-xs uppercase tracking-widest transition-colors">Manifesto</a>
@@ -27,8 +23,8 @@ export function Hero() {
 
       {/* Main Content Area */}
       <div className="flex-1 relative z-10 grid grid-cols-1 md:grid-cols-3">
-        {/* Main Content Column */}
-        <div className="md:col-span-2 relative flex flex-col justify-end pb-32 p-8 md:p-12">
+        {/* Main Content Column - Holds the vertical structural line via border-r */}
+        <div className="md:col-span-2 relative flex flex-col justify-end pb-32 p-8 md:p-12 border-r border-zinc-800">
            
            <motion.div 
              initial={{ opacity: 0, y: 10 }}
@@ -57,7 +53,7 @@ export function Hero() {
         </div>
 
         {/* Right Abstract Column */}
-        <div className="relative flex flex-col justify-center items-center border-l border-zinc-800/50 md:border-transparent overflow-hidden">
+        <div className="relative flex flex-col justify-center items-center overflow-hidden">
            
            {/* Abstract Colorful Art - Shifted Down */}
            <div className="relative w-full h-full flex items-center justify-center pt-32">
@@ -96,7 +92,7 @@ export function Hero() {
               <div className="absolute w-2 h-2 bg-white rounded-full shadow-[0_0_20px_rgba(255,255,255,0.8)]" />
            </div>
 
-           {/* Decorative Grid Graphic (Bottom Right) - Retained for technical feel */}
+           {/* Decorative Grid Graphic (Bottom Right) */}
            <div className="absolute bottom-0 right-0 aspect-square w-1/2 border-t border-l border-zinc-800 opacity-30 relative overflow-hidden">
               <div className="absolute inset-0 bg-[size:10px_10px] bg-[linear-gradient(to_right,#3f3f46_1px,transparent_1px),linear-gradient(to_bottom,#3f3f46_1px,transparent_1px)] opacity-20" />
               <div className="absolute bottom-4 right-4 text-[8px] font-mono text-zinc-600 uppercase tracking-widest text-right">
