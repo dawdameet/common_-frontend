@@ -38,15 +38,15 @@ const features = [
 
 export function FeatureGrid() {
   return (
-    <div className="py-32 px-12 bg-[#050505] border-t border-white/5 relative overflow-hidden">
+    <div className="py-20 px-6 md:py-32 md:px-12 bg-[#050505] border-t border-white/5 relative overflow-hidden">
       
       {/* Background Geometry */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full bg-white/5" />
       
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="mb-24 flex flex-col items-center text-center">
+        <div className="mb-16 md:mb-24 flex flex-col items-center text-center">
           <span className="text-[10px] text-indigo-400 font-mono tracking-[0.2em] uppercase mb-6">Fig. 02 — System Architecture</span>
-          <h2 className="text-4xl md:text-5xl font-light tracking-tighter text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-light tracking-tighter text-white mb-6">
             Five Core <span className="text-zinc-600">Surfaces.</span>
           </h2>
           <p className="text-zinc-500 text-sm max-w-lg leading-relaxed font-light">
@@ -62,12 +62,12 @@ export function FeatureGrid() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.8 }}
-              className="group relative bg-[#050505] p-12 md:p-16 hover:bg-[#080808] transition-colors duration-500"
+              className="group relative bg-[#050505] p-8 md:p-16 hover:bg-[#080808] transition-colors duration-500"
             >
               {/* Hover Glow */}
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-in-out" />
 
-              <div className="flex justify-between items-start mb-12">
+              <div className="flex justify-between items-start mb-8 md:mb-12">
                 <span className="text-[10px] font-mono text-zinc-600 group-hover:text-indigo-400 transition-colors tracking-widest">
                   {feature.id} / {feature.label}
                 </span>

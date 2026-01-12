@@ -33,20 +33,20 @@ const steps = [
 
 export function Workflow() {
   return (
-    <div className="py-32 bg-[#050505] border-t border-white/5 relative">
-      <div className="max-w-7xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-24">
+    <div className="py-20 md:py-32 bg-[#050505] border-t border-white/5 relative">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
         
         {/* Left: Sticky Header */}
         <div className="relative">
            <div className="sticky top-32">
               <span className="text-[10px] text-indigo-400 font-mono tracking-[0.2em] uppercase mb-8 block">Fig. 03 — Process Loop</span>
-              <h2 className="text-5xl md:text-6xl font-light tracking-tighter text-white mb-8 leading-[0.9]">
+              <h2 className="text-4xl md:text-6xl font-light tracking-tighter text-white mb-8 leading-[0.9]">
                 Order from <br />
                 <span className="text-zinc-700">Entropy.</span>
               </h2>
               <p className="text-zinc-500 text-sm leading-relaxed max-w-sm font-light mb-12">
                 Most tools blend noise and signal. We separate them physically. 
-                The flow of information in COMMON is unidirectional and irreversible by design.
+                The flow of information in COMMON_ is unidirectional and irreversible by design.
               </p>
               
               {/* Decorative Diagram */}
@@ -60,7 +60,7 @@ export function Workflow() {
         </div>
 
         {/* Right: Vertical Timeline */}
-        <div className="relative border-l border-white/5 pl-12 md:pl-24 py-12">
+        <div className="relative border-l border-white/5 pl-8 md:pl-24 py-12">
            {steps.map((step, i) => (
              <motion.div 
                key={i}
@@ -68,13 +68,13 @@ export function Workflow() {
                whileInView={{ opacity: 1, x: 0 }}
                viewport={{ once: true, margin: "-100px" }}
                transition={{ delay: i * 0.2, duration: 0.8 }}
-               className="relative mb-24 last:mb-0 group"
+               className="relative mb-16 last:mb-0 md:mb-24 group"
              >
                 {/* Connector Node */}
-                <div className="absolute -left-[calc(3rem+5px)] md:-left-[calc(6rem+5px)] top-2 w-2 h-2 rounded-full border border-zinc-800 bg-[#050505] group-hover:border-indigo-500 group-hover:bg-indigo-500/20 transition-colors duration-500 z-10" />
+                <div className="absolute -left-[calc(2rem+5px)] md:-left-[calc(6rem+5px)] top-2 w-2 h-2 rounded-full border border-zinc-800 bg-[#050505] group-hover:border-indigo-500 group-hover:bg-indigo-500/20 transition-colors duration-500 z-10" />
                 
                 {/* Active Beam (Decoration) */}
-                <div className="absolute -left-[calc(3rem+4px)] md:-left-[calc(6rem+4px)] top-4 w-px h-24 bg-gradient-to-b from-indigo-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100" />
+                <div className="absolute -left-[calc(2rem+4px)] md:-left-[calc(6rem+4px)] top-4 w-px h-24 bg-gradient-to-b from-indigo-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100" />
 
                 <div className="flex flex-col gap-4">
                    <span className="text-[10px] font-mono text-zinc-700 group-hover:text-indigo-900/80 transition-colors tracking-widest uppercase">
