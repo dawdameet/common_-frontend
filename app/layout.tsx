@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "COMMON_ — Thought Architecture",
   description: "A system for deep work. Silence the noise. Curate the signal.",
   icons: {
-    icon: "/logo.png",
+    icon: "/logo.ico",
   },
 };
 

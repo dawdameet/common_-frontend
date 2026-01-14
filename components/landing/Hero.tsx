@@ -13,7 +13,10 @@ export function Hero() {
       
       {/* Navigation */}
       <nav className="relative z-10 w-full h-24 md:h-32 flex items-center justify-between px-6 md:px-12 border-b border-white/5">
-        <div className="text-zinc-100 text-sm font-medium tracking-[0.2em] uppercase opacity-80">Common_</div>
+        <div className="flex items-center gap-3">
+          <img src="/logo.png" alt="Common_" className="h-6 md:h-8 w-auto opacity-90 invert dark:invert-0" />
+          <span className="text-zinc-100 text-sm font-medium tracking-[0.2em] uppercase opacity-80 hidden sm:block">Common_</span>
+        </div>
         <div className="hidden md:flex items-center gap-12">
            <a href="#" className="text-zinc-500 hover:text-zinc-300 text-[10px] uppercase tracking-[0.2em] transition-colors">Manifesto</a>
            <a href="#" className="text-zinc-500 hover:text-zinc-300 text-[10px] uppercase tracking-[0.2em] transition-colors">Index</a>
