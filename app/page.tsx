@@ -5,6 +5,8 @@ import { FeatureGrid } from "@/components/landing/FeatureGrid";
 import { Workflow } from "@/components/landing/Workflow";
 import { Pricing } from "@/components/landing/Pricing";
 import { Manifesto } from "@/components/landing/Manifesto";
+import { IndexSection } from "@/components/landing/IndexSection";
+import { FooterBanner } from "@/components/landing/FooterBanner";
 
 export default function Home() {
   return (
@@ -13,7 +15,9 @@ export default function Home() {
       <FeatureGrid />
       <Workflow />
       <Pricing />
+      <IndexSection />
       <Manifesto />
+      <FooterBanner />
       <footer className="py-12 md:py-24 text-center border-t border-white/5 relative overflow-hidden bg-[#050505]">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-12 bg-gradient-to-b from-white/10 to-transparent" />
         <img src="/logo.png" alt="Common_" className="h-6 w-auto mx-auto mb-8 opacity-20 grayscale" />

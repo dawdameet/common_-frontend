@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 export function Manifesto() {
   return (
-    <div className="py-24 md:py-40 bg-[#050505] border-t border-white/5 flex flex-col items-center text-center relative overflow-hidden">
+    <div id="manifesto" className="py-24 md:py-40 bg-[#050505] border-t border-white/5 flex flex-col items-center text-center relative overflow-hidden">
       
       {/* Background Radial */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] md:w-[800px] md:h-[800px] bg-indigo-900/5 rounded-full blur-[120px] pointer-events-none" />
